@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form storage setup — MRV Institute</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .setup-page { max-width: 640px; margin: 6rem auto 3rem; padding: 0 1.5rem; }
+    .setup-page h1 { font-size: 1.5rem; margin-bottom: 1rem; }
+    .setup-page ol { margin: 1rem 0 1rem 1.25rem; line-height: 1.7; }
+    .setup-page pre { background: var(--gray-50); padding: 1rem; border-radius: 8px; overflow-x: auto; font-size: 0.85rem; }
+    .setup-page a { color: var(--blue); font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="setup-page">
+    <h1>Fix form storage (2 minutes)</h1>
+    <p>The enquiry form needs an access key in <code>js/config.js</code>.</p>
+
+    <h2>Web3Forms (easiest)</h2>
+    <ol>
+      <li>Go to <a href="https://web3forms.com" target="_blank" rel="noopener">web3forms.com</a></li>
+      <li>Enter your email → <strong>Create Access Key</strong></li>
+      <li>Copy the key</li>
+      <li>Open <code>js/config.js</code> and paste:</li>
+    </ol>
+    <pre>web3formsAccessKey: 'your-key-here',</pre>
+    <ol start="5">
+      <li>Save, upload to GitHub, refresh the site</li>
+      <li>Test the enquiry form — you should get an email</li>
+    </ol>
+
+    <p><a href="index.html">← Back to website</a> · <a href="setup/GOOGLE_SHEETS_SETUP.md">Google Sheets (Excel) setup</a></p>
+  </div>
+</body>
+</html>

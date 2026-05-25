@@ -1,0 +1,8 @@
+.DS_Store
+*.xlsx
+WhatsApp*
+Logo New.pdf
+Logo.pdf
+
+# Optional: keep your private Apps Script URL out of git
+# js/config.js
