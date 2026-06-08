@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://your-username.github.io/edu-webstie/sitemap.xml
+Sitemap: https://mrvhealthcareinstitution.co.in/sitemap.xml
