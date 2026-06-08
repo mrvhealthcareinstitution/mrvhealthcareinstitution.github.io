@@ -43,11 +43,13 @@ Each push redeploys the site within a few minutes.
 
 ## Custom domain
 
-**Live domain:** `https://mrvhealthcareinstitution.co.in/`
+**Live domain:** `https://www.mrvhealthcareinstitution.co.in/`
 
 Configured in GitHub (**Settings → Pages → Custom domain**) and `CNAME` file in the repo.
 
-### GoDaddy DNS (verify these match)
+### GoDaddy DNS — required records
+
+**Delete** any old `@` A records pointing to GoDaddy (e.g. `3.33.130.190`, `15.197.148.33`) or **Forwarding** rules.
 
 | Type | Name | Value |
 |------|------|--------|
@@ -57,7 +59,13 @@ Configured in GitHub (**Settings → Pages → Custom domain**) and `CNAME` file
 | **A** | `@` | `185.199.111.153` |
 | **CNAME** | `www` | `mrvhealthcareinstitution.github.io` |
 
-HTTPS can take up to 24 hours after DNS propagates. In GitHub Pages settings, enable **Enforce HTTPS** once the certificate is ready.
+### HTTPS
+
+1. Wait until GitHub Pages shows **DNS check successful** (can take 15 min–24 hrs).
+2. Enable **Enforce HTTPS** in repo **Settings → Pages**.
+3. Use **`https://www.mrvhealthcareinstitution.co.in/`** as your public link until apex A records are fixed.
+
+If apex (`mrvhealthcareinstitution.co.in` without www) shows SSL errors, the `@` A records are still wrong — fix them in GoDaddy.
 
 ## Form on live site
 
